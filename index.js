@@ -28,24 +28,10 @@ server.route({
   method: 'GET',
   path: '/{path*}',
   handler: {
-    file: './www/index.html'
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/faq.html',
-  handler: {
-    file: './www/faq.html'
-  }
-});
-
-server.route({
-  method: 'GET',
-  path: '/assets/{path*}',
-  handler: {
     directory: {
-      path: './www/assets/'
+      path: './www',
+	  defaultExtension: 'html',
+	  listing: true
     }
   }
 });
