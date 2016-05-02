@@ -34,6 +34,14 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/faq.html',
+  handler: {
+    file: './www/faq.html'
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/assets/{path*}',
   handler: {
     directory: {
