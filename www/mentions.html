@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./assets/css/master-FAQ.css" media="screen" charset="utf-8">
-    <title>FAQ | Abibao</title>
+    <link rel="stylesheet" href="assets/css/master-FAQ.css" media="screen" charset="utf-8">
+    <title>Mentions légales | Abibao</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
@@ -43,7 +43,7 @@
         </div>
         <div id="header-wrapper">
           <div class="container">
-            <img id="logo" src="./assets/img/abibao_logo.png" srcset="./assets/img/abibao_logo@2x.png 2x, ./assets/img/abibao_logo@3x.png 3x" alt="Abibao" />
+            <img id="logo" src="assets/img/abibao_logo.png" srcset="assets/img/abibao_logo@2x.png 2x, assets/img/abibao_logo@3x.png 3x" alt="Abibao" />
             <nav>
               <ul>
                 <!-- <li><a href="#">Qui sommes-nous ?</a></li> -->
@@ -107,7 +107,7 @@
           <h3>Qu'est-ce qu'Abibao ?</h3>
           <p>Nous sommes une communauté d'utilisateurs qui accepte de répondre à des sondages contre une rémunération qui est directement reversée aux associations caritatives de notre choix.</p>
           <p>Voici schématiquement comment s'organise notre modèle :</p>
-          <p style="text-align:center;"><img src="./assets/img/schema01.jpg"></p>
+          <p style="text-align:center;"><img src="assets/img/schema01.jpg"></p>
           <p>
             <i>Les entreprises acceptent de financer des associations à chaque fois que nous répondons à leurs sondages. Tout le monde est gagnant et nous donnons du sens aux études marketing des entreprises !</i>
           </p>
@@ -244,7 +244,7 @@
           <div class="footer-col-title">
             NOS PARTENAIRES
           </div>
-          <img src="./assets/img/partenaires_tmp.png" alt="" />
+          <img src="assets/img/partenaires_tmp.png" alt="" />
         </div>
         <div class="footer-col">
           <div class="footer-col-title">
@@ -253,7 +253,7 @@
           <div id="footer-contact-wrapper">
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="./assets/img/icon_suivez-nous.png" alt="" />
+                <img src="assets/img/icon_suivez-nous.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -267,7 +267,7 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="./assets/img/icon_contact.png" alt="" />
+                <img src="assets/img/icon_contact.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -280,7 +280,7 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <a href="./faq.html"><img src="./assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
+                <a href="./faq.html"><img src="assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -293,7 +293,7 @@
             </div>
 <!--             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="./assets/img/icon_professionnel.png" alt="" />
+                <img src="assets/img/icon_professionnel.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -308,11 +308,28 @@
         </div>
       </div>
       <div id="mentions">
-        <a href="./cgu.html">CGU</a> - <a href="./mentions.html">Mention Légale</a> - <a href="mailto:contact@abibao.com">Contact</a> - Tous droits réservés Abibao 2016
+        CGU - Mention Légale - Tous droits réservés Abibao 2015
       </div>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-    <script src="./assets/js/jquery.carouFredSel-6.2.1-packed.js" charset="utf-8"></script>
-    <script src="./assets/js/main.js" charset="utf-8"></script>
+    <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#carousel').carouFredSel({
+              direction            : "left",
+              align: "center",
+              infinite: true,
+              height:140,
+              width: "100%",
+              circular: true,
+              scroll : {
+                  items            : 1,
+                  duration         : 800,
+                  pauseOnHover     : false
+              }
+          });
+      });
+    </script>
   </body>
 </html>
