@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900|Permanent+Marker);
+@font-lato: 'Lato', sans-serif;
+@font-permanent-marker: 'Permanent Marker', cursive;
+@color-abibao-grey: #373E44;
+@color-abibao-blue: #5DA2C7;
+@color-abibao-orange: #FF9B00;
+@size-container: 1130px;
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: @font-lato;
+    max-width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.layout {
+    display: flex;
+    &.row {
+        flex-direction: row;
+    }
+    &.col {
+        flex-direction: column;
+    }
+}
+.container {
+    max-width: @size-container;
+    margin: auto;
+    width: 100%;
+}
+#jumbotron {
+    height: 1060px;
+    background: url('../img/background-jumbotron.jpg') no-repeat center;
+    background-size: cover;
+    clip-path: polygon(100% 920px,100% 0px,0px 0px,0px 100%);
+
+    // HEADER
+    header {
+        position: relative;
+        height: 120px;
+        #header-wrapper {
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            height: 100%;
+            padding: 30px 10px;
+            background: @color-abibao-grey;
+            color: #FFF;
+            clip-path: polygon(100% 70px,100% 0px,0px 0px,0px 100%);
+            nav {
+                float: right;
+                ul {
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        display: inline;
+                        padding: 8px 13px;
+                        line-height: 0;
+                        a {
+                            color: #FFF;
+                            text-decoration: none;
+                        }
+                        &#signin {
+                            background: #FFF;
+                            border-radius: 4px;
+                            margin-left: 13px;
+                            a {
+                                color: @color-abibao-blue !important;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #header-blue-border {
+            position: absolute;
+            z-index: 0;
+            background: @color-abibao-blue;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            clip-path: polygon(100% 110px,100% 0px,0px 0px,0px 30%);
+        }
+    }
+    h1 {
+        transform: rotate(-2.2deg);
+        display: block;
+        color: #FFF;
+        font-family: @font-permanent-marker;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 100px auto;
+        font-size: 4em;
+        line-height: 54px;
+        letter-spacing: -5px;
+        margin-bottom: 190px;
+    }
+    form#mail-catcher {
+        max-width: 910px;
+        width: 100%;
+        margin: auto;
+        background: #FFF;
+        padding: 13px;
+        button,
+        input {
+            padding: 16px;
+            margin: 0;
+            border: none;
+            border: 1px solid @color-abibao-blue;
+            font-size: 1.6em;
+        }
+        input {
+            flex: 1;
+            border-right: none;
+        }
+        button {
+            // width: 200px;
+            padding-left: 76px;
+            padding-right: 76px;
+            font-weight: 700;
+            color: #FFF;
+            cursor: pointer;
+            background: @color-abibao-orange;
+            border-color: @color-abibao-orange;
+        }
+    }
+}
+#main {
+    padding: 0px 30px 0px 30px;//Fix Vincent - tout sale - pour avoir des bordures sur mobile (temporaire)
+    h2 {
+        color: @color-abibao-grey;
+        font-weight: 900;
+        font-size: 2em;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    #stats-abibao-wrapper {
+        background: @color-abibao-blue;
+        padding: 46px 20px;
+        justify-content: center;
+        align-items: center;
+        .col {
+            flex: 3;
+            text-align: center;
+            .legend,
+            .number {
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+            .number {
+                color: @color-abibao-grey;
+                font-size: 4.7em;
+                line-height: 1;
+            }
+            .legend {
+                color: #FFF;
+                font-size: 2.5em;
+                // line-height: .8em;
+            }
+            &.big {
+                .number {
+                    font-size: 9em;
+                }
+                .legend {
+                    font-size: 1.5em;
+                    // line-height: .1em;
+                }
+            }
+        }
+    }
+    #soutiens-caroussel{
+      // background: red;
+      width: 100%;
+      // height: 140px;
+      padding: 32px 0px;
+      display: block;
+      #carousel{
+        img{
+          display: block;
+          margin: 0 20px;
+          float: left;
+        }
+      }
+    }
+    #advantages {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .col {
+            width: 42%;
+            img {
+                display: block;
+                margin: 60px auto;
+                height: 80px;
+            }
+            h3 {
+                text-align: center;
+                text-transform: uppercase;
+                color: @color-abibao-grey;
+                font-weight: 700;
+                font-size: 1.6em;
+                letter-spacing: -1px;
+                min-height: 64px;
+            }
+            p, ul {
+                font-weight: 300;
+                font-size: 1em;
+                color: @color-abibao-grey;
+                padding: 0;
+                margin: 0;
+            }
+            ul{
+              list-style: decimal;
+              li{
+                margin-bottom: 4px;
+              }
+            }
+        }
+    }
+}
+#mobile-app {
+    height: 60px;
+    margin-top: 60px;
+    background: url('../img/BG-apps.png') no-repeat center;
+    background-size: cover;
+}
+#abibao-message {
+    text-align: center;
+    padding: 100px 20px;
+    color: @color-abibao-grey;
+    h2 {
+        text-transform: uppercase;
+        color: #163053;
+        font-size: 1.9em;
+        font-weight: 900;
+    }
+    p {
+        margin-top: 60px;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}
+footer {
+    background: @color-abibao-grey;
+    padding: 50px 20px;
+    color: #FFF;
+    a{color:#FFF; text-decoration: none;}
+    #footer-wrapper{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .footer-col{
+        width: 45.5%;
+        .footer-col-title{
+          font-size: 1.45em;
+          margin-bottom: 34px;
+          font-weight: 400;
+        }
+      }
+      #footer-contact-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .footer-contact-wrapper-col{
+          width: 47%;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .footer-contact-wrapper-col-thumb{
+            width: 65px;
+            flex-shrink: 0;
+            img{
+              display: block;
+            }
+          }
+          .footer-contact-wrapper-col-title{
+            margin-bottom: 15px;
+            font-size: .95em;
+          }
+          .footer-contact-wrapper-col-text{
+            font-size: .8em;
+            line-height: 1.6em;
+            color: #8F9396;
+          }
+        }
+      }
+      // #carousel-footer{
+      //   img{
+      //     display: block;
+      //     float: left;
+      //   }
+      // }
+    }
+}
+
+#mentions{
+  text-align: center;
+  font-size: .75em;
+  margin-top: 30px;
+  color: #8F9396;
+
+}
