@@ -28,10 +28,40 @@ server.route({
   method: 'GET',
   path: '/{path*}',
   handler: {
+    file: './www/index.html'
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/faq.html',
+  handler: {
+    file: './www/faq.html'
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/mentions.html',
+  handler: {
+    file: './www/mentions.html'
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/cgu.html',
+  handler: {
+    file: './www/cgu.html'
+  }
+});
+
+server.route({
+  method: 'GET',
+  path: '/assets/{path*}',
+  handler: {
     directory: {
-      path: './www',
-	  defaultExtension: 'html',
-	  listing: true
+      path: './www/assets/'
     }
   }
 });
