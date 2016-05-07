@@ -2,12 +2,12 @@ FROM mhart/alpine-node:5.5
 
 MAINTAINER Gilles Perreymond <gperreymond@gmail.com>
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
 
-COPY package.json /usr/src/app/
-COPY index.js /usr/src/app/
-ADD www /usr/src/app/www
+COPY package.json /usr/app/
+COPY src/index.js /usr/app/
+ADD src/www /usr/app/www
 
 RUN apk add --update make gcc g++ python && \
   npm install --production && \
