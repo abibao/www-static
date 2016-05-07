@@ -6,8 +6,7 @@ RUN mkdir -p /usr/app
 WORKDIR /usr/app
 
 COPY package.json /usr/app/
-COPY src/index.js /usr/app/
-ADD src/templates /usr/app/templates
+ADD src /usr/app
 
 RUN apk add --update make gcc g++ python && \
   npm install --production && \
