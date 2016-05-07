@@ -48,7 +48,7 @@
               <ul>
                 <!-- <li><a href="#">Qui sommes-nous ?</a></li> -->
                 <li><a href="./faq.html" id="howto">FAQ</a></li>
-                <li id="signin" ><a href="http://dashboard.pprod.abibao.com/register" id="cta_header">S'inscrire</a></li>
+                <li id="signin" ><a href="{{ dashboard_url }}/register" id="cta_header">S'inscrire</a></li>
               </ul>
             </nav>
           </div>
@@ -58,7 +58,7 @@
         <h1>
           <img id="logo" src="assets/img/1sondage1euro.png" srcset="assets/img/1sondage1euro@2x.png 2x, assets/img/1sondage1euro@3x.png 3x" alt="1 sondage = 1 euro pour ton asso !" />
         </h1>
-        <form id="mail-catcher" class="layout row" action="http://dashboard.pprod.abibao.com/register" method="get">
+        <form id="mail-catcher" class="layout row" action="{{ dashboard_url }}/register" method="get">
           <input type="email" name="registermail" value="" placeholder="Mon e-mail">
           <button type="submit" id="cta_button">M'inscrire</button>
         </form>

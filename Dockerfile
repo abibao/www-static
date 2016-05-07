@@ -7,7 +7,7 @@ WORKDIR /usr/app
 
 COPY package.json /usr/app/
 COPY src/index.js /usr/app/
-ADD src/www /usr/app/www
+ADD src/templates /usr/app/templates
 
 RUN apk add --update make gcc g++ python && \
   npm install --production && \
