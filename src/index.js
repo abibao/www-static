@@ -33,9 +33,9 @@ server.register(require('vision'), (err) => {
       html: require('handlebars')
     },
     relativeTo: __dirname,
-    path: './templates',
-    layoutPath: './templates/layout',
-    helpersPath: './templates/helpers'
+    path: './templates'
+    // layoutPath: './templates/layout',
+    // helpersPath: './templates/helpers'
   });
 })
 
