@@ -92,8 +92,10 @@ server.route({
   handler: function(request, reply) {
     var data = {
       page_title: 'Association / Les Clowns Z’Hôpitaux',
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       charity: {
         name: 'Les Clowns Z’Hôpitaux',
+        urn: 'urn:abibao:database:entity:ffd68c859144fbc90893be25caede9d4a2c69b86986b1d37',
         description: 'Depuis 2004, l’association "Clowns Z’hôpitaux" a pour objectif de créer et d’organiser des interventions de duos de Clowns en milieu hospitalier et dans tous les établissements de soins à destination de celles et ceux qui ont besoin de réconfort à l’hôpital comme en maison de retraite ou en maison d’accueil spécialisé : enfants, personnes âgées, adultes en situation de handicap.',
         picture: './assets/img/logo_associations/asso-clowns.png'
       }
