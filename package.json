@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "handlebars": "4.0.5",
-    "hapi": "13.3.0",
+    "hapi": "13.4.0",
     "hoek": "4.0.0",
-    "inert": "3.2.1",
+    "inert": "4.0.0",
     "nconf": "0.8.4",
     "vision": "4.1.0"
   },

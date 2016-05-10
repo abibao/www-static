@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./assets/css/master-FAQ.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/master-association.css" media="screen" charset="utf-8">
     <title>{{ page_title }}</title>
 
     <!-- Favicon -->
@@ -27,15 +28,42 @@
 
   </head>
   <body>
-    <h2>{{ charity.name }}</h2>
-    <p>{{ charity.description }}</p>
-    <p><img src="{{ charity.picture }}"></p>
-    <p>
-      <form id="mail-catcher" class="layout row" action="{{ dashboard_url }}/register" method="get">
-        <input type="email" name="registermail" value="" placeholder="Mon e-mail">
-        <input type="hidden" name="registerentity" value="{{ charity.urn }}">
-        <button type="submit" id="cta_button">M'inscrire</button>
-      </form>
-    </p>
+
+    <div class="ng-scope">
+      <header class="ng-scope">
+        <div id="header-blue-border"></div>
+        <div id="header-wrapper">
+          <div class="container">
+            <!-- <img id="logo" src="assets/img/abibao_logo.png" srcset="assets/img/abibao_logo@2x.png 2x, assets/img/abibao_logo@3x.png 3x" alt=""> -->
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section id="main" ui-view="" class="ng-scope" style="padding-top:0px;vertical-align:top;">
+      <section class="container ng-scope">
+        <section class="forms-container">
+          <section class="form-wrapper reverse ng-scope">
+            <img src="{{ charity.picture }}">
+            <div class="form-body">
+              <form class="form-text ng-pristine ng-invalid ng-invalid-required ng-valid-email" action="{{ dashboard_url }}/register" method="get">
+                <h1 style="color:#5da2c7;font-size: 2.05rem;font-weight: 900;letter-spacing: -.01rem;">{{ charity.hangs }}</h1>
+                <br>
+                <label>{{ charity.description }}</label>
+                <br>
+                <br>
+                <label style="margin-bottom:0px;">Votre e-mail pour être alerté des sondages à venir :</label>
+                <input type="hidden" name="registercharity" value="{{ charity.urn }}">
+                <input type="email" name="registermail" ng-model="userCredentials.email" ng-required="true" placeholder="Mon e-mail" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-email" required="required">
+                <div class="form-next-wrapper" style="padding-top:0px">
+                  <button class="button" type="submit">Valider</button>
+                </div>
+              </form>
+            </div>
+          </section>
+        </section>
+      </section>
+    </section>
+
   </body>
 </html>
