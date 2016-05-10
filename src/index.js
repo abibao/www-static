@@ -91,7 +91,7 @@ server.route({
   path: '/elles_imaginent.html',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Association / Les Clowns Z’Hôpitaux',
+      page_title: 'Association / Elle’s Imagine’nt',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       charity: {
         name: 'Elle’s Imagine’nt',
