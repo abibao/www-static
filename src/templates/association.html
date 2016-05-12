@@ -46,7 +46,7 @@
       </header>
       <div class="container">
         <h1 class="baseline">
-          Aidez gratuitement<br/>{{ charity.name }}<br/> en répondant à des sondages !
+          Aidez gratuitement<br/><img src="{{ charity.picture01 }}" height="150px" style="margin-top: 20px;" alt="logo association" /><br/> en répondant à des sondages !
         </h1>
         <form id="mail-catcher" class="layout row" action="{{ dashboard_url }}/register" method="get">
           <input type="email" name="registermail" value="" placeholder="Mon e-mail">

@@ -151,6 +151,27 @@ server.route({
 
 server.route({
   method: 'GET',
+  path: '/explore',
+  handler: function(request, reply) {
+    var data = {
+      page_title: 'Aidez l’association Explore en répondant à des sondages',
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      charity: {
+        name: 'Explore',
+        name_long: 'le fond Explore',
+        hangs: 'Ensemble accélérons les possibles',
+        urn: 'urn:abibao:database:entity:ffd68c859144a0ce0893be25caede9d4a2c69b86986b1d39',
+        description: 'Laboratoire d’idées et d’actions, le fonds de dotation Explore, reconnu d’intérêt général et présidé par Roland Jourdain, développe et accompagne des projets remarquables qui proposent des solutions réalistes et optimistes aux enjeux environnementaux et sociaux actuels.',
+        picture01: './assets/img/logo_associations/asso-explore.png',
+        picture02: './assets/img/abibao-flyers-explore.jpg'
+      }
+    }
+    reply.view('association', data);
+  }
+});
+
+server.route({
+  method: 'GET',
   path: '/schola',
   handler: function(request, reply) {
     var data = {
