@@ -237,6 +237,7 @@ html {
 }
 #main #advantages .col p,
 #main #advantages .col ul {
+	text-align: justify;
     font-weight: 300;
     font-size: 1em;
     color: #373E44;
