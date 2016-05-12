@@ -154,7 +154,7 @@ server.route({
   path: '/schola',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Aidez l\'association Schola Africa en répondant à des sondages',
+      page_title: 'Aidez l’association Schola Africa en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       charity: {
         name: 'Schola Africa',
@@ -175,14 +175,14 @@ server.route({
   path: '/sosh',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Aidez l\'association SOS-Homophobie en répondant à des sondages',
+      page_title: 'Aidez l’association SOS-Homophobie en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       charity: {
         name: 'SOS-Homophobie',
         name_long: 'SOS-Homophobie',
         hangs: 'Lutte contre la lesbophobie, la gayphobie, la biphobie et la transphobie',
         urn: 'urn:abibao:database:entity:ffd68c859144a5cc0893be25caede9d4a2c69b86986b1d61',
-        description: 'SOS Homophobie, est une association française à but non lucratif, de lutte contre les discriminations et les agressions à caractère homophobe à l\'encontre des lesbiennes, des gays, des bisexuels et des trans créée le 11 avril 1994. Elle se compose essentiellement de membres bénévoles dans toute la France.',
+        description: 'SOS Homophobie, est une association française à but non lucratif, de lutte contre les discriminations et les agressions à caractère homophobe à l’encontre des lesbiennes, des gays, des bisexuels et des trans créée le 11 avril 1994. Elle se compose essentiellement de membres bénévoles dans toute la France.',
         picture01: './assets/img/logo_associations/asso-soshomophobie.png',
         picture02: './assets/img/logo_associations/asso-soshomophobie.png'
       }
@@ -196,14 +196,14 @@ server.route({
   path: '/tfc',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Aidez l\'association Ticket For Change en répondant à des sondages',
+      page_title: 'Aidez l’association Ticket For Change en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       charity: {
         name: 'Ticket For Change',
         name_long: 'Ticket For Change',
-        hangs: 'Changer la société par l\'entrepreneuriat',
+        hangs: 'Changer la société par l’entrepreneuriat',
         urn: 'urn:abibao:database:entity:ffd68c859144f6c50893be25caede9d4a2c69b86986b1d36',
-        description: 'Ticket for Change accompagne des individus qui utilisent l’entrepreneuriat pour répondre à des problèmes sociaux ou environnementaux. Nous les aidons à passer de l’envie à l’idée et de l’idée à l’action afin qu'ils aient le plus d'impact positif. Nous sommes soutenus par des pionniers de l’innovation sociale comme Nicolas Hulot, Pierre Rabhi ou André Dupon. En 2 ans, nous avons contribué à l\'émergence 300 entreprises sociales, dont 40 que nous accompagnons aujourd\'hui.',
+        description: 'Ticket for Change accompagne des individus qui utilisent l’entrepreneuriat pour répondre à des problèmes sociaux ou environnementaux. Nous les aidons à passer de l’envie à l’idée et de l’idée à l’action afin qu’ils aient le plus d’impact positif. Nous sommes soutenus par des pionniers de l’innovation sociale comme Nicolas Hulot, Pierre Rabhi ou André Dupon. En 2 ans, nous avons contribué à l’émergence 300 entreprises sociales, dont 40 que nous accompagnons aujourd’hui.',
         picture01: './assets/img/logo_associations/asso-tfc.png',
         picture02: './assets/img/logo_associations/asso-tfc.png'
       }
