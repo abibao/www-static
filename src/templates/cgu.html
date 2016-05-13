@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/master.css" media="screen" charset="utf-8">
-    <title>Abibao - Aidez des associations pour pas un rond !</title>
+    <link rel="stylesheet" href="assets/css/master-legal.css" media="screen" charset="utf-8">
+    <title>CGU | Abibao</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
@@ -37,7 +37,7 @@
     })(window,document,'script','dataLayer','GTM-MDRGK7');</script>
     <!-- End Google Tag Manager -->
 
-    <section id="jumbotron">
+    <section id="jumbotron" class="nobg">
       <header>
         <div id="header-blue-border">
         </div>
@@ -47,87 +47,27 @@
             <nav>
               <ul>
                 <!-- <li><a href="#">Qui sommes-nous ?</a></li> -->
-                <li><a href="./faq.html" id="howto">FAQ</a></li>
-                <li id="signin" ><a href="{{ dashboard_url }}/register" id="cta_header">S'inscrire</a></li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li id="signin" ><a href="http://dashboard.abibao.com/register">S'inscrire</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
-      <div class="container">
-        <h1>
-          <img id="logo" src="assets/img/1sondage1euro.png" srcset="assets/img/1sondage1euro@2x.png 2x, assets/img/1sondage1euro@3x.png 3x" alt="1 sondage = 1 euro pour ton asso !" />
-        </h1>
-        <form id="mail-catcher" class="layout row" action="{{ dashboard_url }}/register" method="get">
-          <input type="email" name="registermail" value="" placeholder="Mon e-mail">
-          <button type="submit" id="cta_button">M'inscrire</button>
-        </form>
-        <h1>
-          <a href="#main"><img src="assets/img/fleche_vers-le-bas.png" srcset="assets/img/fleche_vers-le-bas@2x.png 2x, assets/img/fleche_vers-le-bas@3x.png 3x" alt="Voir plus bas..." /></a>
-        </h1>
-      </div>
-    </section>
-    <section id="main">
-      <div class="container">
-        <h2>
-          Soutenez une de ces associations formidables
-        </h2>
-        <div id="soutiens-caroussel">
-          <div id="carousel">
-            <a href="http://www.centre-simone-de-beauvoir.com/" target="_blank"><img src="assets/img/logo_associations/asso-casdb.png" alt="Centre Audiovisuel Simone de Beauvoir" width="367"/></a>
-            <a href="http://clown-hopital.com/" target="_blank"><img src="assets/img/logo_associations/asso-clowns.png" alt="Les Clowns Z'Hopitaux" width="140"/></a>
-            <a href="http://www.ellesimaginent.fr/" target="_blank"><img src="assets/img/logo_associations/asso-elles_imaginent.png" alt="Elle's Imagine'nt" width="269"/></a>
-            <a href="http://www.explore-jourdain.com/fr/" target="_blank"><img src="assets/img/logo_associations/asso-explore.png" alt="Explore" width="190"/></a>
-            <a href="http://www.schola-africa.com/" target="_blank"><img src="assets/img/logo_associations/asso-scholaafrica.png" alt="Schola Africa" width="122"/></a>
-            <a href="https://www.sos-homophobie.org/" target="_blank"><img src="assets/img/logo_associations/asso-soshomophobie.png" alt="SOS Homophobie" width="178"/></a>
-            <a href="http://www.ticketforchange.org/" target="_blank"><img src="assets/img/logo_associations/asso-tfc.png" alt="Ticket For Change" width="275"/></a>
-          </div>
-        </div>
-        <h2>Abibao Qu'est-ce que c'est ?</h2>
-        <div id="advantages" class="layout row">
-          <div class="col">
-            <img src="assets/img/icon_fonctionnement.png" alt="Le fonctionnement" />
-            <h3>Le fonctionnement</h3>
-            <ul>
-              <li>Inscrivez-vous et sélectionnez une association.</li>
-              <li>Enrichissez votre profil (cela augmente vos chances de recevoir des sondages).</li>
-              <li>Lorsqu'un sondage apparaît et correspond à vos centres d’intérêt, vous recevez une notification.</li>
-              <li>Vous répondez et le montant indiqué est automatiquement reversé à l'association que vous avez sélectionnée.</li>
-            </ul>
-          </div>
-          <div class="col">
-            <img src="assets/img/incon_model.png" alt="Le modèle économique" />
-            <h3>Le business model</h3>
-            <p>
-              Abibao ne prélève aucune commission sur l’argent reversé aux associations. 100% des fonds vont aux organismes caritatifs et c’est totalement gratuit pour eux. Nos frais de fonctionnement sont couverts par un ticket d’entrée payé par les entreprises pour accéder à la plateforme. <b>Notre modèle économique est construit de telle sorte que les sommes d'argent récoltées pour les associations seront toujours largement supérieures à nos propres bénéfices d'entreprise.</b>
-            </p>
-          </div>
-          <div class="col">
-            <img src="assets/img/icon_anonym.png" alt="Anonyme" />
-            <h3>L'incription est anonyme</h3>
-            <p>
-              <b>Anonyme</b> parce que nous n’avons pas besoin de savoir QUI vous êtes mais seulement COMMENT vous êtes. Nous ne vous demanderons JAMAIS votre identité (nom / prénom), ni votre adresse, ni votre numéro de téléphone. Nous avons seulement besoin de votre émail pour vous envoyer des notifications de nouveaux sondages. Votre adresse ne sera jamais utilisée pour de la communication commerciale, nous nous y engageons.
-            </p>
-          </div>
-          <div class="col">
-            <img src="assets/img/icon_entreprise.png" alt="Aidez" />
-            <h3>Aidez des associations et des startups</h3>
-            <p>
-              En répondant régulièrement aux sondages vous aidez directement une association en lui apportant un revenu complémentaire et régulier pour accomplir sa mission sociale.
-              En participant sur Abibao vous aidez aussi des PME et startups à améliorer leurs services. Vos avis contribuent à créer de bons produits sur le marché pour une meilleure performance de l’économie française.
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section id="abibao-message">
       <div class="container">
-        <h2>Abibao est une start-up responsable</h2>
-        <p>
-          <b>Abibao est une startup responsable et solidaire</b> La plateforme Abibao est gérée par une startup guidée par des valeurs d’entrepreneuriat social. Notre mission est de permettre à des projets caritatifs de collecter des fonds selon une approche alternative aux solutions classiques. Notre rentabilité est au service de cette finalité sociale et nous gérons nos ressources de telle sorte à maximiser sur le long terme notre capacité à récolter de l’argent pour la bonne cause.
-        </p>
+        <h2>Conditions Générales d'Utilisation d'Abibao</h2>
+        <p style="border: 1px dashed lightgrey; padding: 25px 15px 25px 15px;">Voici le contrat de confiance que vous acceptez passer entre vous et la plateforme Abibao. N'hésitez pas à nous faire des retours sur ce document.<br/>Bonne lecture !</p>
       </div>
+    </section>
+
+    <section id="main">
+      <div class="container legal">
+        <div id="Q1">
+          <h3>Une erreur s'est produite, veuillez réessayer ultérieurement...</h3>
+        </div>
     </section>
 
     <footer>
@@ -136,7 +76,7 @@
           <div class="footer-col-title">
             NOS PARTENAIRES
           </div>
-          <img src="assets/img/partenaires_tmp.png" alt="Partenaires" />
+          <img src="assets/img/partenaires_tmp.png" alt="" />
         </div>
         <div class="footer-col">
           <div class="footer-col-title">
@@ -145,7 +85,7 @@
           <div id="footer-contact-wrapper">
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="assets/img/icon_suivez-nous.png" alt="Suivez-nous" />
+                <img src="assets/img/icon_suivez-nous.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -159,7 +99,7 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="assets/img/icon_contact.png" alt="Contact" />
+                <img src="assets/img/icon_contact.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -172,11 +112,11 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <a href="./faq.html" id="howto"><img src="assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
+                <a href="./faq.html"><img src="assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
-                  <a href="./faq.html" id="howto">Foire aux Questions</a>
+                  <a href="./faq.html">Foire aux Questions</a>
                 </div>
                 <div class="footer-contact-wrapper-col-text">
                   Retrouvez toutes les questions les plus posées !
@@ -218,14 +158,8 @@
               scroll : {
                   items            : 1,
                   duration         : 800,
-                  pauseOnHover     : true
+                  pauseOnHover     : false
               }
-          });
-          $('a').click(function(){
-              $('html, body').animate({
-                  scrollTop: $( $.attr(this, 'href') ).offset().top
-              }, 500);
-              return false;
           });
       });
     </script>

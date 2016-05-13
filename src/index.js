@@ -82,6 +82,14 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/charte.html',
+  handler: {
+    view: 'charte'
+  }
+});
+
 /**
 templates for charities
 **/
