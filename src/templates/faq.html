@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/master-FAQ.css" media="screen" charset="utf-8">
-    <title>Mentions légales | Abibao</title>
+    <link rel="stylesheet" href="./assets/css/master-FAQ.css" media="screen" charset="utf-8">
+    <title>FAQ | Abibao</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
@@ -43,12 +43,12 @@
         </div>
         <div id="header-wrapper">
           <div class="container">
-            <img id="logo" src="assets/img/abibao_logo.png" srcset="assets/img/abibao_logo@2x.png 2x, assets/img/abibao_logo@3x.png 3x" alt="Abibao" />
+            <img id="logo" src="./assets/img/abibao_logo.png" srcset="./assets/img/abibao_logo@2x.png 2x, ./assets/img/abibao_logo@3x.png 3x" alt="Abibao" />
             <nav>
               <ul>
                 <!-- <li><a href="#">Qui sommes-nous ?</a></li> -->
                 <li><a href="./index.html">Accueil</a></li>
-                <li id="signin" ><a href="http://dashboard.abibao.com/register">S'inscrire</a></li>
+                <li id="signin" ><a href="{{ dashboard_url }}/register" id="cta_header">S'inscrire</a></li>
               </ul>
             </nav>
           </div>
@@ -58,19 +58,56 @@
 
     <section id="abibao-message">
       <div class="container">
-        <h2>Mentions légales Abibao</h2>
-        <p>Vous souhaitez être rassuré sur la nature juridique d'Abibao ou alors vous êtes tout simplement curieux : Cette page est là pour vous.<br/>Bonne lecture !</p>
+        <h2>FAQ Abibao</h2>
+        <p style="border: 1px dashed lightgrey; padding: 30px;">Vous êtes curieux(se) d'en savoir + sur Abibao ? Nous allons tout vous dire sur notre éthique, notre fonctionnement, et comment nous comptons vous permettre de financer (gratuitement) de beaux projets.</p>
       </div>
     </section>
 
     <section id="main">
+      <div class="container FAQ_sommaire">
+        <h3>Abibao ?</h3>
+        <p>
+          <div><a href="#Q1">Qu'est-ce qu'Abibao ?</a></div>
+          <div><a href="#Q2">Le fonctionnement</a></div>
+          <div><a href="#Q3">Une entreprise responsable, sociale et solidaire</a></div>
+          <div><a href="#Q4">Le business model</a></div>
+          <div><a href="#Q5">C'est gratuit et ça le restera.</a></div>
+          <div><a href="#Q6">Pourquoi êtes-vous une entreprise et pas une association ?</a></div>
+        </p>
+        <h3>Les utilisateurs</h3>
+        <p>
+          <div><a href="#Q7">Des données anonymes</a></div>
+          <div><a href="#Q8">Des données sécurisées</a></div>
+          <div><a href="#Q9">Pas de SPAM, ni de fichage commercial</a></div>
+          <div><a href="#Q10">A quoi servent les questionnaires de profil?</a></div>
+          <div><a href="#Q11">"Je connais déjà les sites de sondages, on perd du temps et on ne gagne rien !"</a></div>
+        </p>
+        <h3>Les associations</h3>
+        <p>
+          <div><a href="#Q12">La sélection des associations</a></div>
+          <div><a href="#Q13">Je représente une association et j'aimerai la proposer</a></div>
+          <div><a href="#Q14">Quelles sont les conditions pour les associations ?</a></div>
+          <div><a href="#Q15">Comment est calculée la rémunération pour les associations ?</a></div>
+        </p>
+        <h3>Les sondages</h3>
+        <p>
+          <div><a href="#Q16">D'où viennent les sondages ?</a></div>
+          <div><a href="#Q17">Les sondages sont-ils longs ?</a></div>
+        </p>
+        <h3>Nous aider</h3>
+        <p>
+          <div><a href="#Q18">1 - S'incrire sur Abibao</a></div>
+          <div><a href="#Q19">2 - En parler autour de vous</a></div>
+          <div><a href="#Q20">3 - Devenir ambassadeur</a></div>
+        </p>
+      </div>
       <div class="container FAQ">
         <h2>Abibao ?</h2>
         <div id="Q1">
           <h3>Qu'est-ce qu'Abibao ?</h3>
           <p>Nous sommes une communauté d'utilisateurs qui accepte de répondre à des sondages contre une rémunération qui est directement reversée aux associations caritatives de notre choix.</p>
           <p>Voici schématiquement comment s'organise notre modèle :</p>
-          <p style="text-align:center;"><img src="assets/img/schema01.jpg"></p>
+          <p style="text-align:center;"><img src="./assets/img/schema01.jpg"></p>
           <p>
             <i>Les entreprises acceptent de financer des associations à chaque fois que nous répondons à leurs sondages. Tout le monde est gagnant et nous donnons du sens aux études marketing des entreprises !</i>
           </p>
@@ -207,7 +244,7 @@
           <div class="footer-col-title">
             NOS PARTENAIRES
           </div>
-          <img src="assets/img/partenaires_tmp.png" alt="" />
+          <img src="./assets/img/partenaires_tmp.png" alt="" />
         </div>
         <div class="footer-col">
           <div class="footer-col-title">
@@ -216,7 +253,7 @@
           <div id="footer-contact-wrapper">
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="assets/img/icon_suivez-nous.png" alt="" />
+                <img src="./assets/img/icon_suivez-nous.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -230,7 +267,7 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="assets/img/icon_contact.png" alt="" />
+                <img src="./assets/img/icon_contact.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -243,7 +280,7 @@
             </div>
             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <a href="./faq.html"><img src="assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
+                <a href="./faq.html"><img src="./assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -256,7 +293,7 @@
             </div>
 <!--             <div class="footer-contact-wrapper-col">
               <div class="footer-contact-wrapper-col-thumb">
-                <img src="assets/img/icon_professionnel.png" alt="" />
+                <img src="./assets/img/icon_professionnel.png" alt="" />
               </div>
               <div class="footer-contact-wrapper-col-description">
                 <div class="footer-contact-wrapper-col-title">
@@ -271,26 +308,19 @@
         </div>
       </div>
       <div id="mentions">
-        CGU - Mention Légale - Tous droits réservés Abibao 2015
+        <a href="./cgu.html">CGU</a> - <a href="./mentions.html">Mentions Légales</a> - <a href="mailto:contact@abibao.com">Contact</a> - Tous droits réservés Abibao 2016
       </div>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js" charset="utf-8"></script>
-    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script src="./assets/js/jquery.carouFredSel-6.2.1-packed.js" charset="utf-8"></script>
+    <script src="./assets/js/main.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        $('#carousel').carouFredSel({
-              direction            : "left",
-              align: "center",
-              infinite: true,
-              height:140,
-              width: "100%",
-              circular: true,
-              scroll : {
-                  items            : 1,
-                  duration         : 800,
-                  pauseOnHover     : false
-              }
+          $('a').click(function(){
+              $('html, body').animate({
+                  scrollTop: $( $.attr(this, 'href') ).offset().top
+              }, 500);
+              return false;
           });
       });
     </script>

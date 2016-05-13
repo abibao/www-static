@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/master-associations.css" media="screen" charset="utf-8">
+    <title>{{ page_title }}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./assets/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="./assets/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./assets/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="./assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="./assets/img/favicons/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href='https://fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <section id="jumbotron">
+      <header>
+        <div id="header-blue-border">
+        </div>
+        <div id="header-wrapper">
+          <div class="container">
+            <img id="logo" src="assets/img/abibao_logo.png" srcset="assets/img/abibao_logo@2x.png 2x, assets/img/abibao_logo@3x.png 3x" alt="Abibao" />
+            <nav>
+              <ul>
+                <!-- <li><a href="#">Qui sommes-nous ?</a></li> -->
+                <li><a href="./faq.html" id="howto">FAQ</a></li>
+                <li id="signin" ><a href="{{ dashboard_url }}/register" id="cta_header">S'inscrire</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <h1 class="baseline">
+          Aidez gratuitement<br/><img src="{{ charity.picture01 }}" height="175px" class="img_baseline" alt="logo association" /><br/> en répondant à des sondages !
+        </h1>
+        <form id="mail-catcher" class="layout row" action="{{ dashboard_url }}/register" method="get">
+          <input type="email" name="registermail" value="" placeholder="Mon e-mail">
+          <input type="hidden" name="registercharity" value="{{ charity.urn }}">
+          <button type="submit" id="cta_button">M'inscrire</button>
+        </form>
+        <h1>
+          <a href="#first"><img src="assets/img/fleche_vers-le-bas.png" srcset="assets/img/fleche_vers-le-bas@2x.png 2x, assets/img/fleche_vers-le-bas@3x.png 3x" alt="Voir plus bas..." /></a>
+        </h1>
+      </div>
+    </section>
+
+
+
+    <section id="abibao-message">
+      <div class="container" id="first">
+        <h2>Une nouvelle source de financement pour {{ charity.name }}</h2>
+        <p>
+          Abibao est une toute jeune startup qui veut aider les associations en construisant un modèle économique intelligent, social et responsable. Leur mission est de permettre à des projets caritatifs de collecter des fonds selon une approche alternative aux solutions classiques. Notre association est partenaire d'Abibao, c'est à dire que nous pouvons récolter de l’argent grâce à vos réponses.
+        </p>
+        <img src="{{ charity.picture01 }}" alt="logo association" />
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <h2>Comment ça marche ?</h2>
+        <div id="advantages" class="layout row">
+          <div class="col">
+            <img src="assets/img/icon_fonctionnement.png" alt="Le fonctionnement" />
+            <h3>Le fonctionnement</h3>
+            <ul>
+              <li>Inscrivez-vous.</li>
+              <li>Enrichissez votre profil (cela augmente vos chances de recevoir des sondages).</li>
+              <li>Lorsqu'un sondage apparaît et correspond à vos centres d’intérêt, vous recevez une notification.</li>
+              <li>Vous répondez et <strong>{{ charity.name_long }}</strong> recevra de l'argent !</li>
+            </ul>
+          </div>
+          <div class="col">
+            <img src="assets/img/icon_anonym.png" alt="Anonyme" />
+            <h3>L'inscription est anonyme</h3>
+            <p>
+              Votre inscription et l'ensemble des réponses que vous apporterez respecteront des critères stricts d'anonymats. Abibao n'a pas besoin de savoir QUI vous êtes, d’ailleurs cela ne vous sera jamais demandé !</b>
+            </p>
+          </div>
+          <div class="col">
+            <img src="assets/img/mail.png" alt="Pas de spam" />
+            <h3>Pas de SPAM</h3>
+            <p>
+              Comme vous, Abibao n’aime pas le spam. Votre adresse email ne sera jamais revendue à des diffuseurs commerciaux. Vous ne serez sollicité par email uniquement lorsqu'il le sera nécessaire, c'est à dire pour récolter de l'argent pour {{ charity.name_long }}.
+            </p>
+          </div>
+          <div class="col">
+            <img src="assets/img/icon_entreprise.png" alt="Aidez" />
+            <h3>Une startup sociale</h3>
+            <p>
+              Abibao ne prend pas de commission sur les dons générés. Ses frais de fonctionnement sont couverts par un ticket d'entrée d'accès à la plateforme facturé aux entreprises. Qui plus est, ces frais sont plafonnés pour être toujours inférieurs aux dons générés. Vos réponses financent d'abord {{ charity.name_long }} et ensuite permettent à Abibao de développer ses outils de récolte pour les associations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abibao-message">
+      <div class="container">
+        <img src="assets/img/thumb_up.png" alt="vos amis peuvent aider" />
+        <h2>Vos amis aussi peuvent nous soutenir !</h2>
+        <p>
+          Financez {{ charity.name_long }} pour pas un rond, telle est la devise sur Abibao. N'attendez plus pour nous soutenir. Invitez aussi vos amis, votre famille et vos collègues à s'inscrire pour la bonne cause ! Si vous avez facebook, vous pouvez partager <a href="https://www.facebook.com/pages/Abibao/384344205057545">la page Abibao</a>.
+        </p>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <h2>Les avantages pour {{ charity.name }}</h2>
+        <div id="advantages" class="layout row">
+          <div class="col">
+            <img src="assets/img/recolte.png" alt="financement" />
+            <h3>Une nouvelle source de financement</h3>
+            <p>C'est la garantie d'un revenu complémentaire à notre recherche de financements. Si nous arrivons à rassembler plusieurs milliers de soutiens sur Abibao cela nous permettra de financer de nouvelles actions très concrètes.</p>
+          </div>
+          <div class="col">
+            <img src="assets/img/eye.png" alt="Anonyme" />
+            <h3>De la visibilité</h3>
+            <p>C'est un tremplin de visibilité car Abibao attire des particuliers qui ne connaissent pas encore {{ charity.name_long }}. Des hommes et des femmes susceptibles de nous rejoindre dans nos actions.</p>
+          </div>
+          <div class="col">
+            <img src="assets/img/survey.png" alt="Sondage à disposition" />
+            <h3>Des sondages à disposition</h3>
+            <p>La plateforme nous donne un accès gracieux à ses outils de sondage, ce qui nous permet par exemple de mieux connaître l'impact de nos actions auprès de la population française.</p>
+          </div>
+          <div class="col">
+            <img src="assets/img/free.png" alt="Gratuit pour nous" />
+            <h3>Gratuit</h3>
+            <p>
+              C'est totalement gratuit pour les associations ! {{ charity.name_long }} ne paie rien pour être présent sur Abibao. C'est grâce à vous, à votre inscription et à vos réponses que tout ceci est possible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="abibao-message">
+      <div class="container">
+        <a href="#jumbotron"><img src="{{ charity.picture02 }}" alt="image association" /></a>
+      </div>
+    </section>
+
+
+
+    <footer>
+      <div class="container" id="footer-wrapper">
+        <div class="footer-col">
+          <div class="footer-col-title">
+            NOS PARTENAIRES
+          </div>
+          <img src="assets/img/partenaires_tmp.png" alt="Partenaires" />
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">
+            CONTACT
+          </div>
+          <div id="footer-contact-wrapper">
+            <div class="footer-contact-wrapper-col">
+              <div class="footer-contact-wrapper-col-thumb">
+                <img src="assets/img/icon_suivez-nous.png" alt="Suivez-nous" />
+              </div>
+              <div class="footer-contact-wrapper-col-description">
+                <div class="footer-contact-wrapper-col-title">
+                  Suivez-nous
+                </div>
+                <div class="footer-contact-wrapper-col-text">
+                  <a href="https://www.facebook.com/pages/Abibao/384344205057545">Facebook Abibao</a>
+                  <br><a href="https://twitter.com/abibao_com">Twitter Abibao</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact-wrapper-col">
+              <div class="footer-contact-wrapper-col-thumb">
+                <img src="assets/img/icon_contact.png" alt="Contact" />
+              </div>
+              <div class="footer-contact-wrapper-col-description">
+                <div class="footer-contact-wrapper-col-title">
+                  <a href="mailto:contact@abibao.com">Contactez-nous</a>
+                </div>
+                <div class="footer-contact-wrapper-col-text">
+                  On vous répond sur contact[❤]abibao.com
+                </div>
+              </div>
+            </div>
+            <div class="footer-contact-wrapper-col">
+              <div class="footer-contact-wrapper-col-thumb">
+                <a href="./faq.html" id="howto"><img src="assets/img/icon_FAQ.png" alt="FAQ Abibao" /></a>
+              </div>
+              <div class="footer-contact-wrapper-col-description">
+                <div class="footer-contact-wrapper-col-title">
+                  <a href="./faq.html" id="howto">Foire aux Questions</a>
+                </div>
+                <div class="footer-contact-wrapper-col-text">
+                  Retrouvez toutes les questions les plus posées !
+                </div>
+              </div>
+            </div>
+<!--             <div class="footer-contact-wrapper-col">
+              <div class="footer-contact-wrapper-col-thumb">
+                <img src="assets/img/icon_professionnel.png" alt="" />
+              </div>
+              <div class="footer-contact-wrapper-col-description">
+                <div class="footer-contact-wrapper-col-title">
+                  Diffuser un sondage?
+                </div>
+                <div class="footer-contact-wrapper-col-text">
+                  <a href="./pro.html">Jetez un oeil ici</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div id="mentions">
+        <a href="./cgu.html">CGU</a> - <a href="./mentions.html">Mentions Légales</a> - <a href="mailto:contact@abibao.com">Contact</a> - Tous droits réservés Abibao 2016
+      </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.carouFredSel-6.2.1-packed.js" charset="utf-8"></script>
+    <script src="assets/js/main.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#carousel').carouFredSel({
+              direction            : "left",
+              align: "center",
+              infinite: true,
+              height:140,
+              width: "100%",
+              circular: true,
+              scroll : {
+                  items            : 1,
+                  duration         : 800,
+                  pauseOnHover     : true
+              }
+          });
+          $('a').click(function(){
+              $('html, body').animate({
+                  scrollTop: $( $.attr(this, 'href') ).offset().top
+              }, 500);
+              return false;
+          });
+      });
+    </script>
+  </body>
+</html>
