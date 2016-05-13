@@ -42,8 +42,11 @@ server.register(require('vision'), (err) => {
 server.route({
   method: 'GET',
   path: '/',
-  handler: {
-    view: 'index'
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('index', data);
   }
 });
 
@@ -61,32 +64,44 @@ server.route({
 server.route({
   method: 'GET',
   path: '/mentions.html',
-  handler: {
-    view: 'mentions'
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('mentions', data);
   }
 });
 
 server.route({
   method: 'GET',
   path: '/faq.html',
-  handler: {
-    view: 'faq'
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('faq', data);
   }
 });
 
 server.route({
   method: 'GET',
   path: '/cgu.html',
-  handler: {
-    view: 'cgu'
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('cgu', data);
   }
 });
 
 server.route({
   method: 'GET',
   path: '/charte.html',
-  handler: {
-    view: 'charte'
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('charte', data);
   }
 });
 
