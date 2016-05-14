@@ -105,6 +105,17 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/prvp.html',
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+    }
+    reply.view('prvp', data);
+  }
+});
+
 /**
 templates for charities
 **/
