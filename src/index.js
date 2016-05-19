@@ -44,7 +44,8 @@ server.route({
   path: '/',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('index', data);
   }
@@ -55,7 +56,8 @@ server.route({
   path: '/index.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('index', data);
   }
