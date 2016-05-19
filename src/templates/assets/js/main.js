@@ -2,7 +2,6 @@
 	$('#howto').on('click', function (e) {
 			//On pousse un évènement pour Google Analytics
 	        var subscribe_page = "Page " + window.location.pathname; //On récupère le nom de la page en cours qui à poussé au subscribe.
-	        alert(subscribe_page);
 			ga('send', {
 						  hitType: 'event',
 						  eventCategory: 'Navigation',
@@ -14,7 +13,6 @@
 	$('#cta_header').on('click', function (e) {
 			//On pousse un évènement pour Google Analytics
 	        var subscribe_page = "Page " + window.location.pathname; //On récupère le nom de la page en cours qui à poussé au subscribe.
-	        alert(subscribe_page);
 			ga('send', {
 						  hitType: 'event',
 						  eventCategory: 'Conversion',
