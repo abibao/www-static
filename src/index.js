@@ -68,7 +68,8 @@ server.route({
   path: '/mentions.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('mentions', data);
   }
@@ -79,7 +80,8 @@ server.route({
   path: '/faq.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('faq', data);
   }
@@ -90,7 +92,8 @@ server.route({
   path: '/cgu.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('cgu', data);
   }
@@ -101,7 +104,8 @@ server.route({
   path: '/charte.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('charte', data);
   }
@@ -112,7 +116,8 @@ server.route({
   path: '/prvp.html',
   handler: function(request, reply) {
     var data = {
-      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL')
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
     }
     reply.view('prvp', data);
   }
@@ -129,6 +134,7 @@ server.route({
     var data = {
       page_title: 'Association / Elle’s Imagine’nt',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Elle’s Imagine’nt',
         name_long: 'Elle’s Imagine’nt',
@@ -150,6 +156,7 @@ server.route({
     var data = {
       page_title: 'Aidez Les Clowns Z’Hôpitaux en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Les Clowns Z’Hôpitaux',
         name_long: 'Les Clowns Z’Hôpitaux',
@@ -171,6 +178,7 @@ server.route({
     var data = {
       page_title: 'Aidez le Centre Audiovisuel Simone de Beauvoir en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Le Centre Simone de Beauvoir',
         name_long: 'le Centre Audiovisuel Simone de Beauvoir',
@@ -192,6 +200,7 @@ server.route({
     var data = {
       page_title: 'Aidez l’association Explore en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Explore',
         name_long: 'le fond Explore',
@@ -213,6 +222,7 @@ server.route({
     var data = {
       page_title: 'Aidez l’association Schola Africa en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Schola Africa',
         name_long: 'Schola Africa',
@@ -234,6 +244,7 @@ server.route({
     var data = {
       page_title: 'Aidez l’association SOS-Homophobie en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'SOS-Homophobie',
         name_long: 'SOS-Homophobie',
@@ -255,6 +266,7 @@ server.route({
     var data = {
       page_title: 'Aidez l’association Ticket For Change en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
         name: 'Ticket For Change',
         name_long: 'Ticket For Change',
