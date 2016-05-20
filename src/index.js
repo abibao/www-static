@@ -211,7 +211,7 @@ server.route({
         picture02: './assets/img/abibao-flyers-explore.jpg'
       }
     }
-    reply.view('association', data);
+    reply.view('association_fonds', data);
   }
 });
 
