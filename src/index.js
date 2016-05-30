@@ -155,15 +155,15 @@ server.route({
   path: '/clowns',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Aidez Les Clowns Z’Hôpitaux en répondant à des sondages',
+      page_title: 'Aidez « Clowns Z’hôpitaux » en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
-        name: 'Les Clowns Z’Hôpitaux',
-        name_long: 'Les Clowns Z’Hôpitaux',
+        name: '« Clowns Z’hôpitaux »',
+        name_long: '« Clowns Z’hôpitaux »',
         hangs: 'Faîtes entrer les Clowns à l’hôpital',
         urn: 'urn:abibao:database:entity:ffd68c859144fbc90893be25caede9d4a2c69b86986b1d37',
-        description: 'Depuis 2004, l’association "Clowns Z’hôpitaux" a pour objectif de créer et d’organiser des interventions de duos de Clowns en milieu hospitalier et dans tous les établissements de soins à destination de celles et ceux qui ont besoin de réconfort à l’hôpital comme en maison de retraite ou en maison d’accueil spécialisé : enfants, personnes âgées, adultes en situation de handicap.',
+        description: 'Depuis 2004, l’association « Clowns Z’hôpitaux » a pour objectif de créer et d’organiser des interventions de duos de Clowns en milieu hospitalier et dans tous les établissements de soins à destination de celles et ceux qui ont besoin de réconfort à l’hôpital comme en maison de retraite ou en maison d’accueil spécialisé : enfants, personnes âgées, adultes en situation de handicap.',
         picture01: './assets/img/logo_associations/asso-clowns.png',
         picture02: './assets/img/abibao-flyers-clowns.jpg',
         css: 'master-associations.css'
@@ -182,7 +182,7 @@ server.route({
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
-        name: 'Le Centre Simone de Beauvoir',
+        name: 'Le Centre Audiovisuel Simone de Beauvoir',
         name_long: 'le Centre Audiovisuel Simone de Beauvoir',
         hangs: 'Préservons la mémoire des femmes !',
         urn: 'urn:abibao:database:entity:ffd68c859145f29f0893be25caede9d4a2c69b86986b1d35',
