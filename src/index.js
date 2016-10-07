@@ -123,6 +123,18 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/butwhy.html',
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
+    }
+    reply.view('butwhy', data);
+  }
+});
+
 /**
 templates for charities
 **/
@@ -247,13 +259,13 @@ server.route({
   path: '/sosh',
   handler: function(request, reply) {
     var data = {
-      page_title: 'Aidez l’association SOS-Homophobie en répondant à des sondages',
+      page_title: 'Aidez l’association SOS homophobie en répondant à des sondages',
       dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
       ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE'),
       charity: {
-        name: 'SOS-Homophobie',
-        name_long: 'SOS-Homophobie',
-        hangs: 'Lutte contre la lesbophobie, la gayphobie, la biphobie et la transphobie',
+        name: 'SOS homophobie',
+        name_long: 'SOS homophobie',
+        hangs: 'Un petit pas vers nous, un grand pas pour les consciences!',
         urn: 'urn:abibao:database:entity:ffd68c859144a5cc0893be25caede9d4a2c69b86986b1d61',
         description: 'SOS Homophobie, est une association française à but non lucratif, de lutte contre les discriminations et les agressions à caractère homophobe à l’encontre des lesbiennes, des gays, des bisexuels et des trans créée le 11 avril 1994. Elle se compose essentiellement de membres bénévoles dans toute la France.',
         picture01: './assets/img/logo_associations/asso-soshomophobie.png',
