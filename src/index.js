@@ -123,6 +123,18 @@ server.route({
   }
 });
 
+server.route({
+  method: 'GET',
+  path: '/butwhy.html',
+  handler: function(request, reply) {
+    var data = {
+      dashboard_url: nconf.get('ABIBAO_WWW_STATIC_DASHBOARD_URL'),
+      ua_code : nconf.get('ABIBAO_WWW_STATIC_UA_CODE')
+    }
+    reply.view('butwhy', data);
+  }
+});
+
 /**
 templates for charities
 **/
